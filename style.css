@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+/* Body Design CSS Code */
 body{
     font-family: 'Outfit', sans-serif;
     font-size: 15px;
@@ -17,6 +18,7 @@ body{
     /* border: 1px solid black; */
 }
 
+/* Card Container CSS Code */
 .container{
     width: 300px; 
     height: 475px;  
@@ -26,6 +28,7 @@ body{
     border-radius: 18px;
 }
 
+/* Inner Card Flex-Box CSS Code */
 .flexitem{
     display: flex;
     flex-direction: column;
@@ -33,12 +36,15 @@ body{
     align-items: center;
 }
 
+/* Flex-box Img CSS Code */
 .flexitem .code{
     width: 290px;
     margin: 5px auto;
     border-radius: 12px;
 }
 
+
+/* Flex-box h1 CSS Code */
 .flexitem>h1{
     font-size: 1.4rem;
     text-align: center;
@@ -47,6 +53,7 @@ body{
     opacity: 0.8;
 }
 
+/* Flex-Box paragraph CSS Code */
 .flexitem>p{
     text-align: center;
     font-size: 1rem;
@@ -57,7 +64,29 @@ body{
     color:  hsl(218, 44%, 22%);
 }
 
-@media screen and (max-width: 395px) {
+/* Footer Design CSS Code */
+footer{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin: 25px auto;
+    word-spacing: 5px;
+}
+
+/* Footer a tag CSS Code */
+footer a{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+footer a:hover{
+    color: red;
+}
+
+/* Small Responsive CSS Code */
+@media screen and (max-width: 400px) {
     body{
         width: auto;
     }
