@@ -1,6 +1,9 @@
+// Google Fonts 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 /* font-family: 'Outfit', sans-serif; */
 
+
+/* CSS Reset */
 *{
     margin: 0;
     padding: 0;
@@ -15,7 +18,6 @@ body{
     width: 100%;
     max-width: 1440px;
     margin: 110px auto;
-    /* border: 1px solid black; */
 }
 
 /* Card Container CSS Code */
@@ -34,34 +36,29 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h1{
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 10px;
+        margin-top: 5px;
+        opacity: 0.8;
+    }
+    p{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 10px;
+        margin-top: -2px;
+        opacity: 0.6;
+        color:  hsl(218, 44%, 22%);
+    }
 }
 
 /* Flex-box Img CSS Code */
-.flexitem .code{
+.code{
     width: 290px;
     margin: 5px auto;
     border-radius: 12px;
-}
-
-
-/* Flex-box h1 CSS Code */
-.flexitem>h1{
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 10px;
-    margin-top: 5px;
-    opacity: 0.8;
-}
-
-/* Flex-Box paragraph CSS Code */
-.flexitem>p{
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 10px;
-    margin-top: -2px;
-    opacity: 0.6;
-    color:  hsl(218, 44%, 22%);
 }
 
 /* Footer Design CSS Code */
@@ -72,20 +69,17 @@ footer{
     padding: 20px;
     margin: 25px auto;
     word-spacing: 5px;
+    a{
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+        &:hover{
+            color: red;
+        }
+    }
 }
 
-/* Footer a tag CSS Code */
-footer a{
-    text-decoration: underline;
-    color: blue;
-    cursor: pointer;
-}
-
-footer a:hover{
-    color: red;
-}
-
-/* Small Responsive CSS Code */
+/* Short  Responsive CSS Code */
 @media screen and (max-width: 400px) {
     body{
         width: auto;
@@ -99,4 +93,3 @@ footer a:hover{
         transition: 0.3s;
     }
 }
-
